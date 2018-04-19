@@ -1,20 +1,20 @@
 # NYT Hub
-__This web appplication utilizes MongoDB to allow users to view and leave comments on the latest news articles from the New York Times.__
+__This web appplication utilizes MongoDB, Node.js, and Cheerio to grab the latest news articles from the New York Times and allow users to view, save and leave comments on each article.__
 
 ### Overview
 * Whenever a user visits NYT Hub, the user can click the "Get New Articles" button, and the app will scrape the latest stories from the New York Times and display them for the user. 
-    * Each scraped article is saved to the application database._
+    * Each scraped article is saved to the application database.
     * The app scrapes and displays the following information for each article:
         * __Headline__ - _the title of the article_
         * __Summary__ - _a short summary of the article_
         * __URL__ - _the url to the original article_
 
-* Next to each article is a "Save Article" button, which the user can click to save the article for later viewing. 
+* Next to each article is a "Save Article" button for which the user can click to save the article for later viewing. 
     * When the user clicks the "Saved Articles" button, the user will view all of the articles that have been saved. 
 
-* Next to each saved article, there is a "Delete" button and "Article Notes" button.
+* Next to each saved article, there is a "Delete" button and an "Article Notes" button.
     * "Delete" will delete the article from the saved section.
-    * "Article Notes" allows users to view all of the user-created comments on the selected article.
+    * "Article Notes" allows the user to view all of the user-created comments on the selected article.
 
 * The "Article Notes" button also allows users leave a comment on the selected article. 
     * The comments are saved to the database and associated with their articles. 
