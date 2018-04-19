@@ -1,5 +1,5 @@
 # NYT Hub
-__This web appplication utilizes MongoDB, Node.js, and Cheerio to grab the latest news articles from the New York Times and allow users to view, save and leave comments on each article.__
+__This web application utilizes MongoDB, Node.js, and Cheerio to grab the latest news articles from The New York Times and allows users to view, save and leave comments on each article.__
 
 ### Overview
 * Whenever a user visits NYT Hub, the user can click the "Get New Articles" button, and the app will scrape the latest stories from the New York Times and display them for the user. 
