@@ -40,7 +40,7 @@ function renderArticles(articles) {
 }
 
 function createPanel(article) {
-    // This functiont takes in a single JSON object for an article/headline
+    // This function takes in a single JSON object for an article/headline
     // It constructs a jQuery element containing all of the formatted HTML for the
     // article panel
     var panel = $(
@@ -48,13 +48,19 @@ function createPanel(article) {
         "<div class='panel panel-default'>",
         "<div class='panel-heading'>",
         "<h3>",
-        "<a class='article-link' target='_blank' href='" + article.url + "'>",
-        article.headline,
+        "<a class='article-link' target='_blank' href='" + article.link + "'>",
+        article.title,
         "</a>",
         "<a class='btn btn-success save'>",
         "Save Article",
         "</a>",
         "</h3>",
+        "</div>",
+        "<div class='panel-body'>",
+        article.byline,
+        "</div>",
+        "<div class='panel-body'>",
+        article.date,
         "</div>",
         "<div class='panel-body'>",
         article.summary,

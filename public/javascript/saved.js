@@ -47,17 +47,23 @@ function createPanel(article) {
     // article panel
     var panel = $(
     [
+       
         "<div class='panel panel-default'>",
         "<div class='panel-heading'>",
         "<h3>",
-        "<a class='article-link' target='_blank' href='" + article.url + "'>",
-        article.headline,
+        "<a class='article-link' target='_blank' href='" + article.link + "'>",
+        article.title,
         "</a>",
-        "<a class='btn btn-danger delete'>",
-        "Delete From Saved",
+        "<a class='btn btn-success save'>",
+        "Save Article",
         "</a>",
-        "<a class='btn btn-info notes'>Article Notes</a>",
         "</h3>",
+        "</div>",
+        "<div class='panel-body'>",
+        article.byline,
+        "</div>",
+        "<div class='panel-body'>",
+        article.date,
         "</div>",
         "<div class='panel-body'>",
         article.summary,
