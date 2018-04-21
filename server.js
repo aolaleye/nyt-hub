@@ -12,7 +12,7 @@ const db = require("./models");
 
 const PORT = 3000;
 
-const MONGODB_URI = process.env.MONGODB_URI
+const MONGODB_URI = "mongodb://localhost/NYTHub"
 
 // Initialize Express
 const app = express();
