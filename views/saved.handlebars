@@ -1,7 +1,7 @@
 {{#each results mode="prepend"}} {{#if this.isSaved}}
 <div class="row">
     <div class="col s12">
-        <div class="card some-results blue-grey darken-1">
+        <div class="card some-results grey">
             <div class="card-content white-text">
                 <h4 class="headline">{{this.title}}</a></h4>
                 <h6 class="byline">{{this.byline}}</h6>
@@ -11,8 +11,8 @@
                 <a class="article-link" href="{{this.link}}" target="_blank">Link to Article</a>
                 <br>
                 <br>
-                <button class="addComment btn float-left" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Article Comments</button>
-                <button class="btn float-left" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Delete Article</button>
+                <button class="addNote btn float-left" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Comments</button>
+                <button class="delete btn float-left" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Delete Article</button>
             </div>
         </div>
     </div>
