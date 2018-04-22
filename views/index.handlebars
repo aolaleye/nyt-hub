@@ -1,17 +1,18 @@
 {{#each results}}{{#unless this.isSaved}}
 <div class="row">
     <div class="col s12">
-        <div class="card blue-grey darken-1">
+        <div class="card grey">
             <div class="card-content white-text">
-                <h3>{{title}}</a></h3>
-                <h6>{{byline}}</h6>
-                <h6>{{date}}</h6>
-                <h5>{{summary}}</h5>
-                <a class="card-title" href="{{link}}" target="_blank">{{link}}</a>
+                <h4 class="headline">{{title}}</a></h4>
+                <h6 class="byline">{{byline}}</h6>
+                <h6 class="date">{{date}}</h6>
+                <h5 class="summary">{{summary}}</h5>
+                <br>
+                <a class="article-link" href="{{link}}" target="_blank">Link to Article</a>
                 <br>
                 <br>
                 <form action="/saved/{{_id}}" method="POST">
-                    <button type="submit" id="saveArticle" class="btn  light-blue lighten-1">Save Article</button>
+                    <button type="submit" id="saveArticle" class="btn">Save Article</button>
                 </form>
             </div>
         </div>

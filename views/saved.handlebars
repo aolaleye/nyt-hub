@@ -3,15 +3,16 @@
     <div class="col s12">
         <div class="card some-results blue-grey darken-1">
             <div class="card-content white-text">
-                <h3>{{this.title}}</a></h3>
-                <h6>{{this.byline}}</h6>
-                <h6>{{this.date}}</h6>
-                <h5>{{this.summary}}</h5>
-                <a class="card-title" href="{{this.link}}" target="_blank">{{this.link}}</a>
+                <h4 class="headline">{{this.title}}</a></h4>
+                <h6 class="byline">{{this.byline}}</h6>
+                <h6 class="date">{{this.date}}</h6>
+                <h5 class="summary">{{this.summary}}</h5>
+                <br>
+                <a class="article-link" href="{{this.link}}" target="_blank">Link to Article</a>
                 <br>
                 <br>
-                <button class="addComment btn float-left light-blue lighten-1" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Article Comments</button>
-                <button class="btn float-left light-blue lighten-1" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Delete Article</button>
+                <button class="addComment btn float-left" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Article Comments</button>
+                <button class="btn float-left" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Delete Article</button>
             </div>
         </div>
     </div>
