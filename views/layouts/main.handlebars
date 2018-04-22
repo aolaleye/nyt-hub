@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NYT Hub</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="grey darken-3">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo logo-text">NYT Hub</a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="">
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/saved">Saved Articles</a>
+                    </li>
+                    <li>
+                        <form action="/scrape" method="GET">
+                            <button type="submit" class="waves-effect waves-light btn-large scrapeNew">Grab the latest Articles!</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="header parallax-container">
+        <div class="headline">
+            <h1 class="title">NYT Hub</h1>
+            <h4>Save and comment on the latest articles from the New York Times.</h4>
+        </div>
+    </div>
+    <div class="article-list">
+        <div id="noResults">
+            <h2>{{{noResults}}}</h2>
+        </div>
+
+        {{{body}}}
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="articleCommentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Article Comment:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="modalComments">
+                    </div>
+                    <textarea class="form-control mod" id="textarea" rows="3" placeholder="Update notes here..."></textarea>
+                </div>
+                <div class="modal-footer">
+                    <span id="noMessage">Oops! There's no note to save!</span>
+                    <button id="saveComment" type="button" class="btn btn-primary">Save Comment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="//code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
