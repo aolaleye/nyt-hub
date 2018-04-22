@@ -63,8 +63,18 @@ body {
   font-size: 1.5rem;
 }
 
-#saveArticle {
+#saveArticle,
+.addNote,
+#saveArticle:hover,
+.addNote:hover,
+#saveArticle:focus
+.addNote:focus {
   background: #1a1f6e;
+}
+
+.delete,
+.delete:hover {
+  background: darkred;
 }
 
 .byline,
