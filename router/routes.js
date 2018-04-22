@@ -52,10 +52,10 @@ router.get("/scrape", function(req, res) {
           return res.json(err);
         });
     });
-
     // If we were able to successfully scrape and save an Article, send a message to the client
-    res.send("Scrape Complete");
+    // res.send("Scrape Complete");
   });
+  res.redirect("/");
 });
 
 //route to delete a note
