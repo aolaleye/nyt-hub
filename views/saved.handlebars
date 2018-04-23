@@ -8,11 +8,13 @@
                 <h6 class="date">{{this.date}}</h6>
                 <h5 class="summary">{{this.summary}}</h5>
                 <br>
-                <a class="article-link" href="{{this.link}}" target="_blank">Link to Article</a>
+                <a class="article-link" href="{{this.link}}" target="_blank">Full Article</a>
                 <br>
                 <br>
                 <button class="addNote btn float-left" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Comments</button>
-                <button class="delete btn float-left" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Delete Article</button>
+                <form action="/article/{{_id}}" method="POST">
+                    <button class="delete btn float-left" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Delete Article</button>
+                </form>
             </div>
         </div>
     </div>
