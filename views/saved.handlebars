@@ -11,7 +11,7 @@
                 <a class="article-link" href="{{this.link}}" target="_blank">Full Article</a>
                 <br>
                 <br>
-                <button class="addNote btn float-left" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Comments</button>
+                {{!-- <button class="addNote btn float-left" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Comments</button> --}}
                 <form action="/article/{{_id}}" method="POST">
                     <button class="delete btn float-left" data-artid="{{this._id}}" data-noteid="{{this.note.type}}">Delete Article</button>
                 </form>
