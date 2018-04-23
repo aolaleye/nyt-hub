@@ -58,6 +58,17 @@ router.get("/scrape", function(req, res) {
   res.redirect("/");
 });
 
+//route for deleting an article 
+router.post("/article/:id", function(req, res) {
+  db.Article.findByIdAndRemove(req.params.id, function(data) {
+    _id: req.params.id
+  })
+    .catch(function(err) {
+      res.json(err);
+    });
+    res.redirect("/saved");
+});
+
 //route to delete a note
 router.post("/note/:id", function(req, res) {
   db.Note.findByIdAndRemove(req.params.id, function(data) {
