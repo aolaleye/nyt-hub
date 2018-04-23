@@ -1,3 +1,19 @@
+//AJAX DELETE function for deleting a saved article
+// $(".delete").on("click", function () {
+        
+//     var artID = $(this).attr("data-artid");
+//     $.ajax({
+//         url: "/article/" + artID,
+//         type: 'DELETE',
+//         success: function(result) {
+//             location.reload();
+//         }
+//     });
+
+//     location.reload();
+    
+// })
+
 $("#noMessage").hide();
 
 //function to show the modal
