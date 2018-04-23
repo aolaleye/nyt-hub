@@ -14,12 +14,12 @@ __This web application utilizes MongoDB, Node.js, and Cheerio to grab the latest
 
 * Next to each saved article, there is a "Delete" button and an "Article Notes" button.
     * "Delete" will delete the article from the saved section.
-    * "Article Notes" allows the user to view all of the user-created comments on the selected article.
+    <!-- * "Article Notes" allows the user to view all of the user-created comments on the selected article. -->
 
-* The "Article Notes" button also allows users leave a comment on the selected article. 
+<!-- * The "Article Notes" button also allows users leave a comment on the selected article. 
     * The comments are saved to the database and associated with their articles. 
     * Users are able to delete comments left on the articles. 
-    * All stored comments are visible to every user.
+    * All stored comments are visible to every user. -->
 
 > __NOTE__: Whenever a user saves an article, the app ensures that the selected article isn't already represented the database before saving it so there are no duplicates.
 
