@@ -44,9 +44,8 @@ body {
   background: #5a5959;
   padding: 10px;
   border-radius: 3px;
-  text-shadow: 2px 2px 3px #212121;
+  text-shadow: 2px 2px 3px #3a3a3a;
   font-family: 'Libre Baskerville', serif;
-  box-shadow: inset 0px 0px 20px 2px #1f1e1e;
 }
 
 .summary {
