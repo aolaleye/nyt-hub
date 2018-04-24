@@ -77,7 +77,7 @@ router.post("/note/:id", function(req, res) {
   });
 });
 
-////route for grabbing a specific article and populating a note
+//route for grabbing a specific article and populating a note
 router.get("/article/:id", function(req, res) {
   db.Article.findOne({
     _id: req.params.id
