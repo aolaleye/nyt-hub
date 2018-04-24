@@ -31,7 +31,10 @@ __This web application utilizes MongoDB, Node.js, and Cheerio to scrape the late
 * _cheerio_
 * _request_
 
-#### > Deployed Site: https://fathomless-anchorage-80269.herokuapp.com/
+<!-- #### > Deployed Site: https://fathomless-anchorage-80269.herokuapp.com/ -->
+
+#### > __Try it Out:__
+[![NYT Hub](public/assets/images/nythub.png)](https://fathomless-anchorage-80269.herokuapp.com/)
 
 
 
