@@ -1,7 +1,7 @@
 # NYT Hub
-__This web application utilizes MongoDB, Node.js, and Cheerio to scrape the latest news articles from The New York Times and allows users to view and save each article.__
+This web application utilizes MongoDB, Node.js, and Cheerio to scrape the latest news articles from The New York Times and allows users to view and save each article.
 
-### Overview
+#### Overview:
 * Whenever a user visits NYT Hub, the user can click the "Get New Articles" button, and the app will scrape the latest stories from the New York Times and display them for the user. 
     * Each scraped article is saved to the application database.
     * The app scrapes and displays the following information for each article:
@@ -33,7 +33,7 @@ __This web application utilizes MongoDB, Node.js, and Cheerio to scrape the late
 
 <!-- #### > Deployed Site: https://fathomless-anchorage-80269.herokuapp.com/ -->
 
-#### > __Try it Out:__
+#### > __Click Below to Try it Out:__
 [![NYT Hub](public/assets/images/nythub.png)](https://fathomless-anchorage-80269.herokuapp.com/)
 
 
